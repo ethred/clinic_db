@@ -46,7 +46,7 @@ This repository includes files with plain SQL that can be used to recreate a dat
 ## 🛠 Walk through <a name="walk-through"></a>
 
 <ul>
-  <li><a href="https://github.com/microverseinc/curriculum-databases/blob/main/db-structure/vet_clinic_create_tables.md">See the Project Requirement</a></li>
+  <li><a href="https://github.com/microverseinc/curriculum-databases/blob/main/db-structure/database_from_diagram.md">See the Project Requirement</a></li>
   <li>If required you should personalize the content of your page. Choose a topic that is different than the one in the original design</li>
 
 
