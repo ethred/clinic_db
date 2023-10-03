@@ -49,3 +49,15 @@ CREATE TABLE treatments_histories
     FOREIGN KEY (treatment_id) REFERENCES treatments(id),
     FOREIGN KEY (medical_history_id) REFERENCES medical_histories(id)
 );
+
+/* Update the table to add foreign key relationships on the treatments and medical histories as well as constraints */
+ALTER TABLE treatments_histories ADD CONSTRAINT fk_treatment_id FOREIGN KEY (treatment_id) REFERENCES treatments(id);
+ALTER TABLE treatments_histories ADD CONSTRAINT fk_medical_history_id FOREIGN KEY (medical_history_id) REFERENCES medical_histories(id);
+ALTER TABLE medical_histories ADD CONSTRAINT fk_patient FOREIGN KEY(patient_id) REFERENCES patients(id);
+ALTER TABLE invoice_items ADD CONSTRAINT fk_invoice FOREIGN KEY(invoice_id) REFERENCES invoices(id);
+
+/* Add foreign key indexes for enhanced data integrity and data query optimization */
+CREATE INDEX patient_id ON medical_histories (patient_id);
+CREATE INDEX medical_history_id ON invoices (medical_history_id);
+CREATE INDEX invoice_id ON invoice_items (invoice_id);
+CREATE INDEX treatment_id ON invoice_items (treatment_id);
