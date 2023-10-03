@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 
-<h1>PGADMIN DATABASE</h1>
+<h1>CLINIC DATABASE</h1>
 
 # 📗 Table of Contents
 
